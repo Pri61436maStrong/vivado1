@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 12 15:59:32 2024
+# Process ID: 18584
+# Current directory: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mna_idfifo_synth_1
+# Command line: vivado.exe -log mna_idfifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mna_idfifo.tcl
+# Log file: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mna_idfifo_synth_1/mna_idfifo.vds
+# Journal file: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mna_idfifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mna_idfifo.tcl -notrace

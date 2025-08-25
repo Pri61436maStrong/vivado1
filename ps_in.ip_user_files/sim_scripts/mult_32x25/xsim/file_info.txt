@@ -1,0 +1,2 @@
+mult_32x25.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/norm/mult_32x25/sim/mult_32x25.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

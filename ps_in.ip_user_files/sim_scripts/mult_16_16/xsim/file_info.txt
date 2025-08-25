@@ -1,0 +1,2 @@
+mult_16_16.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/mult_16_16/sim/mult_16_16.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

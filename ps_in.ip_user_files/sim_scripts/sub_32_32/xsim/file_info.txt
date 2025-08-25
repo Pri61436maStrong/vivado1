@@ -1,0 +1,2 @@
+sub_32_32.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/sub_32_32/sim/sub_32_32.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

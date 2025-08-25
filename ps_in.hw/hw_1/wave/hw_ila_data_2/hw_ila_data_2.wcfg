@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/project/wyl/BYolo/c2c/0830/wk_mas_10g_pcie_plin_64buf_4lane/AI_Mate_IP/ps_in.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1033053fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="249"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="46" />
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/state_next" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/state_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/state_current" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/state_current[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_current[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_cnt" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_data" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_data[511:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_head" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_head[63:0]</obj_property>
+      <obj_property name="ObjectShortName">r_head[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_dbg_cnt" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_dbg_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_dbg_cnt[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/araddr" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">araddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwdata" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwdata[511:0]</obj_property>
+      <obj_property name="ObjectShortName">awwdata[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/state_current" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/state_current[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_current[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ar_dbg_cnt" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ar_dbg_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ar_dbg_cnt[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_1_cdc_fifo_st[0]_1" type="logic">
+      <obj_property name="ElementShortName">u_ila_1_cdc_fifo_st[0]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_1_cdc_fifo_st[0]_1</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/cdc_fifo_st" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/cdc_fifo_st[4:1]</obj_property>
+      <obj_property name="ObjectShortName">cdc_fifo_st[4:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwinfo" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwinfo[71:0]</obj_property>
+      <obj_property name="ObjectShortName">awwinfo[71:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwaddr" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">awwaddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/arinfo" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/arinfo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">arinfo[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_cnt" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">aw_cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ar_trans_num" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ar_trans_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ar_trans_num[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_trans_num" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_trans_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">aw_trans_num[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/r_fifo_st_cdc" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/r_fifo_st_cdc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fifo_st_cdc[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/state_next" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/state_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_dbg_cnt" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_dbg_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aw_dbg_cnt[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_tx_tdata_mas" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_tx_tdata_mas[255:0]</obj_property>
+      <obj_property name="ObjectShortName">t_axi_auro_tx_tdata_mas[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/tx_data" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/tx_data[255:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/ar_fifo_st_cdc" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/ar_fifo_st_cdc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ar_fifo_st_cdc[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_rx_tdata_mas" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_rx_tdata_mas[255:0]</obj_property>
+      <obj_property name="ObjectShortName">t_axi_auro_rx_tdata_mas[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/aw_fifo_st_cdc" type="array">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/aw_fifo_st_cdc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">aw_fifo_st_cdc[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/ar_fifo_st_vld_cdc" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/ar_fifo_st_vld_cdc</obj_property>
+      <obj_property name="ObjectShortName">ar_fifo_st_vld_cdc</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ar_running" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ar_running</obj_property>
+      <obj_property name="ObjectShortName">ar_running</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/arvalid" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/arvalid</obj_property>
+      <obj_property name="ObjectShortName">arvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/aur_rready" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/aur_rready</obj_property>
+      <obj_property name="ObjectShortName">aur_rready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/aw_fifo_st_vld_cdc" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/aw_fifo_st_vld_cdc</obj_property>
+      <obj_property name="ObjectShortName">aw_fifo_st_vld_cdc</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_running" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/aw_running</obj_property>
+      <obj_property name="ObjectShortName">aw_running</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwvalid" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/awwvalid</obj_property>
+      <obj_property name="ObjectShortName">awwvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/cdc_fifo_st_rdy" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/cdc_fifo_st_rdy</obj_property>
+      <obj_property name="ObjectShortName">cdc_fifo_st_rdy</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_1_cdc_fifo_st" type="array">
+      <obj_property name="ElementShortName">u_ila_1_cdc_fifo_st[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_1_cdc_fifo_st[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/r_fifo_st_rdy_cdc" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/r_fifo_st_rdy_cdc</obj_property>
+      <obj_property name="ObjectShortName">r_fifo_st_rdy_cdc</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/r_fifo_st_vld_cdc" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/r_fifo_st_vld_cdc</obj_property>
+      <obj_property name="ObjectShortName">r_fifo_st_vld_cdc</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_ready" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_ready</obj_property>
+      <obj_property name="ObjectShortName">r_ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_running" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_running</obj_property>
+      <obj_property name="ObjectShortName">r_running</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_valid" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_rx_u0/r_valid</obj_property>
+      <obj_property name="ObjectShortName">r_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ready" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_rx_tvalid_mas" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_rx_tvalid_mas</obj_property>
+      <obj_property name="ObjectShortName">t_axi_auro_rx_tvalid_mas</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_tx_tready_mas" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_tx_tready_mas</obj_property>
+      <obj_property name="ObjectShortName">t_axi_auro_tx_tready_mas</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_tx_tvalid_mas" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/t_axi_auro_tx_tvalid_mas</obj_property>
+      <obj_property name="ObjectShortName">t_axi_auro_tx_tvalid_mas</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/tx_ready" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/tx_valid" type="logic">
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/u_aur_mas/custom_c2c_mas_u0/mas_tx_u0/tx_valid</obj_property>
+      <obj_property name="ObjectShortName">tx_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

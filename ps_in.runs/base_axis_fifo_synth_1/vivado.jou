@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug 30 18:33:48 2024
+# Process ID: 14164
+# Current directory: E:/FPGA_workspace/wangyl/prj_2024/0830/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/base_axis_fifo_synth_1
+# Command line: vivado.exe -log base_axis_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_axis_fifo.tcl
+# Log file: E:/FPGA_workspace/wangyl/prj_2024/0830/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/base_axis_fifo_synth_1/base_axis_fifo.vds
+# Journal file: E:/FPGA_workspace/wangyl/prj_2024/0830/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/base_axis_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_axis_fifo.tcl -notrace

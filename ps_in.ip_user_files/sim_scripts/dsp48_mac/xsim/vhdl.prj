@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/ip/norm/dsp48_mac/sim/dsp48_mac.vhd" \
+
+nosort

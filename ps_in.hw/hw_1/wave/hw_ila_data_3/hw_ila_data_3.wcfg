@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/project/wyl/BYolo/c2c/0830/wk_mas_10g_pcie_plin_64buf_4lane/AI_Mate_IP/ps_in.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9172fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="249"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">host_awdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awaddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awaddr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">host_awaddr[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_rdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">host_rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_araddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_araddr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">host_araddr[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwaddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwaddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_awwaddr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_rdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_awwdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_araddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_araddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_araddr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_awwdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwaddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwaddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_awwaddr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_rdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_araddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_araddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">gpx_araddr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_wdma_ato" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_wdma_ato[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_wdma_ato[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_rdma_ato" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_rdma_ato[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_rdma_ato[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_wdma_afrom" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_wdma_afrom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_wdma_afrom[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_rdma_afrom" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_u0/ddr_rdma_afrom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_rdma_afrom[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_arready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_arready</obj_property>
+      <obj_property name="ObjectShortName">gpx_arready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_arready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_arready</obj_property>
+      <obj_property name="ObjectShortName">gpx_arready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_arvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_arvalid</obj_property>
+      <obj_property name="ObjectShortName">gpx_arvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_arvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_arvalid</obj_property>
+      <obj_property name="ObjectShortName">gpx_arvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwvalid</obj_property>
+      <obj_property name="ObjectShortName">gpx_awwvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_awwvalid</obj_property>
+      <obj_property name="ObjectShortName">gpx_awwvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_rready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_rready</obj_property>
+      <obj_property name="ObjectShortName">gpx_rready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_rready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_rready</obj_property>
+      <obj_property name="ObjectShortName">gpx_rready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_rvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/plddr_dma_ctrl_u0/gpx_regs_seg00_u0/gpx_rvalid</obj_property>
+      <obj_property name="ObjectShortName">gpx_rvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_rvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/cdma_ctrl_u0/gpx_regs_seg00_u0/gpx_rvalid</obj_property>
+      <obj_property name="ObjectShortName">gpx_rvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_2_host_arready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_2_host_arready</obj_property>
+      <obj_property name="ObjectShortName">u_ila_2_host_arready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_arvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_arvalid</obj_property>
+      <obj_property name="ObjectShortName">host_arvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awready</obj_property>
+      <obj_property name="ObjectShortName">host_awready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_awvalid</obj_property>
+      <obj_property name="ObjectShortName">host_awvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pl_ra_rready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pl_ra_rready</obj_property>
+      <obj_property name="ObjectShortName">pl_ra_rready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_rvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BYolo/inst/u_AI_Mate_top/host_ctrl_u0/host_rvalid</obj_property>
+      <obj_property name="ObjectShortName">host_rvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

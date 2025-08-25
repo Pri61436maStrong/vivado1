@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="rddr_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/rddr_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="app_fifo_post_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/app_fifo_post_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="block_indx_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/block_indx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sync_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/sync_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddr_rinfo_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/ddr_rinfo_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="awid_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/awid_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="info_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/info_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_interconnect_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/axi_interconnect_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_clock_converter_0_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/axi_clock_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="aw_cdc_fifo_serdes_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/aw_cdc_fifo_serdes_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ar_cdc_fifo_serdes_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/ar_cdc_fifo_serdes_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mn_cdc_fifo_serdes_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mn_cdc_fifo_serdes_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mna_idfifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mna_idfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AI_CORE_CLK_DR_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/AI_CORE_CLK_DR_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddr32_rdata_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/ddr32_rdata_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cdc_fifo_r_544_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/cdc_fifo_r_544_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddr_rfifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/ddr_rfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="aurora_64b66b_slave_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/aurora_64b66b_slave_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="aurora_64b66b_0_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/aurora_64b66b_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="indx_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/indx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_data_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/sub_data_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddr_rdata_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/ddr_rdata_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="post_info_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/post_info_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hpx_rfifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/hpx_rfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_data_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mult_data_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rfifo_st_cdc_fifo_serdes_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/rfifo_st_cdc_fifo_serdes_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mna_idfifo_w12_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mna_idfifo_w12_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="r_cdc_fifo_serdes_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/r_cdc_fifo_serdes_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rdata_cdc_fifo_serdes_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/rdata_cdc_fifo_serdes_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="w616d64_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w616d64_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rfifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/rfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="w72d64_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w72d64_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="w1280_d512_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cdc_fifo_nms_base_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/cdc_fifo_nms_base_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_16_16_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mult_16_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="w16_d512_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w16_d512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_24_16_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mult_24_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_16_16_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/sub_16_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="arfifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/arfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_32_32_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/sub_32_32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dsp48_mac_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/dsp48_mac_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_s74_s72_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w24d32_dram_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w24d32_dram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w24_dram_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w24_dram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="awwfifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/awwfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w15_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w15_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="af_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/af_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w28d1k_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w28d1k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w976d16_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w976d16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w512_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_32_32_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_32_32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp16_mult_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fp16_mult_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_to_fix_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fp_to_fix_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="addsub_int_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/addsub_int_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_int64_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_int64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp16_sub_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fp16_sub_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_32x25_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mult_32x25_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_unsigned_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_unsigned_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fix_to_float_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fix_to_float_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w64d1k_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w64d1k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w25_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w25_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w15d1k_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w15d1k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sp_async_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/sp_async_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="idx_mem_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/idx_mem_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bdsp_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/bdsp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cdc_fifo_aw_616_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/cdc_fifo_aw_616_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="lbdsp_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/lbdsp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="conf_mem_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/conf_mem_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cdc_fifo_ar_64_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/cdc_fifo_ar_64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sp_rddr_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/sp_rddr_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w33d1k_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w33d1k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_int15_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_int15_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w23_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w23_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w36d512_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w36d512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_w36d1k_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/fifo_w36d1k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_22_16_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mult_22_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_38_38_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_38_38_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_s_26_16_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/mult_s_26_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="w514d512_fifo_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w514d512_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_s_32_32_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s_32_32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ftmp_dpram_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/ftmp_dpram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_39_39_synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_39_39_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="rddr_fifo_synth_1"/>
+		<Parent Id="app_fifo_post_synth_1"/>
+		<Parent Id="block_indx_fifo_synth_1"/>
+		<Parent Id="sync_fifo_synth_1"/>
+		<Parent Id="ddr_rinfo_fifo_synth_1"/>
+		<Parent Id="awid_fifo_synth_1"/>
+		<Parent Id="info_fifo_synth_1"/>
+		<Parent Id="axi_interconnect_synth_1"/>
+		<Parent Id="axi_clock_converter_0_synth_1"/>
+		<Parent Id="aw_cdc_fifo_serdes_synth_1"/>
+		<Parent Id="ar_cdc_fifo_serdes_synth_1"/>
+		<Parent Id="mn_cdc_fifo_serdes_synth_1"/>
+		<Parent Id="mna_idfifo_synth_1"/>
+		<Parent Id="AI_CORE_CLK_DR_synth_1"/>
+		<Parent Id="ddr32_rdata_fifo_synth_1"/>
+		<Parent Id="cdc_fifo_r_544_synth_1"/>
+		<Parent Id="ddr_rfifo_synth_1"/>
+		<Parent Id="aurora_64b66b_slave_synth_1"/>
+		<Parent Id="aurora_64b66b_0_synth_1"/>
+		<Parent Id="indx_fifo_synth_1"/>
+		<Parent Id="sub_data_synth_1"/>
+		<Parent Id="ddr_rdata_fifo_synth_1"/>
+		<Parent Id="post_info_fifo_synth_1"/>
+		<Parent Id="hpx_rfifo_synth_1"/>
+		<Parent Id="mult_data_synth_1"/>
+		<Parent Id="rfifo_st_cdc_fifo_serdes_synth_1"/>
+		<Parent Id="mna_idfifo_w12_synth_1"/>
+		<Parent Id="r_cdc_fifo_serdes_synth_1"/>
+		<Parent Id="rdata_cdc_fifo_serdes_synth_1"/>
+		<Parent Id="w616d64_fifo_synth_1"/>
+		<Parent Id="rfifo_synth_1"/>
+		<Parent Id="w72d64_fifo_synth_1"/>
+		<Parent Id="w1280_d512_synth_1"/>
+		<Parent Id="cdc_fifo_nms_base_synth_1"/>
+		<Parent Id="mult_16_16_synth_1"/>
+		<Parent Id="w16_d512_synth_1"/>
+		<Parent Id="mult_24_16_synth_1"/>
+		<Parent Id="sub_16_16_synth_1"/>
+		<Parent Id="arfifo_synth_1"/>
+		<Parent Id="sub_32_32_synth_1"/>
+		<Parent Id="dsp48_mac_synth_1"/>
+		<Parent Id="add_s74_s72_synth_1"/>
+		<Parent Id="fifo_w24d32_dram_synth_1"/>
+		<Parent Id="fifo_w24_dram_synth_1"/>
+		<Parent Id="awwfifo_synth_1"/>
+		<Parent Id="fifo_w15_synth_1"/>
+		<Parent Id="af_fifo_synth_1"/>
+		<Parent Id="fifo_w28d1k_synth_1"/>
+		<Parent Id="fifo_w976d16_synth_1"/>
+		<Parent Id="fifo_w512_synth_1"/>
+		<Parent Id="add_32_32_synth_1"/>
+		<Parent Id="fp16_mult_synth_1"/>
+		<Parent Id="fp_to_fix_synth_1"/>
+		<Parent Id="addsub_int_synth_1"/>
+		<Parent Id="add_int64_synth_1"/>
+		<Parent Id="fp16_sub_synth_1"/>
+		<Parent Id="mult_32x25_synth_1"/>
+		<Parent Id="add_unsigned_synth_1"/>
+		<Parent Id="fix_to_float_synth_1"/>
+		<Parent Id="fifo_w64d1k_synth_1"/>
+		<Parent Id="fifo_w25_synth_1"/>
+		<Parent Id="fifo_w15d1k_synth_1"/>
+		<Parent Id="sp_async_fifo_synth_1"/>
+		<Parent Id="idx_mem_synth_1"/>
+		<Parent Id="bdsp_synth_1"/>
+		<Parent Id="cdc_fifo_aw_616_synth_1"/>
+		<Parent Id="lbdsp_synth_1"/>
+		<Parent Id="conf_mem_synth_1"/>
+		<Parent Id="cdc_fifo_ar_64_synth_1"/>
+		<Parent Id="sp_rddr_fifo_synth_1"/>
+		<Parent Id="fifo_w33d1k_synth_1"/>
+		<Parent Id="add_int15_synth_1"/>
+		<Parent Id="fifo_w23_synth_1"/>
+		<Parent Id="fifo_w36d512_synth_1"/>
+		<Parent Id="fifo_w36d1k_synth_1"/>
+		<Parent Id="mult_22_16_synth_1"/>
+		<Parent Id="add_38_38_synth_1"/>
+		<Parent Id="mult_s_26_16_synth_1"/>
+		<Parent Id="w514d512_fifo_synth_1"/>
+		<Parent Id="add_s_32_32_synth_1"/>
+		<Parent Id="ftmp_dpram_synth_1"/>
+		<Parent Id="add_39_39_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

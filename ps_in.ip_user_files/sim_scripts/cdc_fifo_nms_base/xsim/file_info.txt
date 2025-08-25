@@ -1,0 +1,2 @@
+cdc_fifo_nms_base.v,verilog,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/sim/cdc_fifo_nms_base.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

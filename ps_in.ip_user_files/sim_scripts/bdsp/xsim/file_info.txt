@@ -1,0 +1,2 @@
+bdsp.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/segpost/bdsp/sim/bdsp.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

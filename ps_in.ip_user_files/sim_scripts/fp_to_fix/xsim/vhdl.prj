@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/ip/norm/fp_to_fix/sim/fp_to_fix.vhd" \
+
+nosort

@@ -1,0 +1,198 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/ip/mna_idfifo/mna_idfifo_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/sub/sub_data_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/mult_data/mult_data_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/w616d64_fifo/w616d64_fifo_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/w1280_d512/w1280_d512_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/w16_d512/w16_d512_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/dsp48_mac/dsp48_mac_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/add_s74_s72/add_s74_s72_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w24d32_dram/fifo_w24d32_dram_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w24_dram/fifo_w24_dram_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w15/fifo_w15_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w28d1k/fifo_w28d1k_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w976d16/fifo_w976d16_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w512/fifo_w512_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/add_32_32/add_32_32_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fp16_mult/fp16_mult_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fp_to_fix/fp_to_fix_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/addsub_int/addsub_int_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/add_int64/add_int64_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fp16_sub/fp16_sub_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/mult_32x25/mult_32x25_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/add_unsigned/add_unsigned_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fix_to_float/fix_to_float_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w64d1k/fifo_w64d1k_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w25/fifo_w25_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w15d1k/fifo_w15d1k_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/segpost/sp_async_fifo/sp_async_fifo_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/idx_mem/idx_mem_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/segpost/bdsp/bdsp_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/segpost/lbdsp/lbdsp_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/conf_mem/conf_mem_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/segpost/sp_rddr_fifo/sp_rddr_fifo_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w33d1k/fifo_w33d1k_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/add_int15/add_int15_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w23/fifo_w23_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w36d512/fifo_w36d512_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/norm/fifo_w36d1k/fifo_w36d1k_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/mult_22_16/mult_22_16_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/add_38_38/add_38_38_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/mult_s_26_16/mult_s_26_16_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/w514d512_fifo/w514d512_fifo_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/add_s_32_32/add_s_32_32_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/ftmp_dpram/ftmp_dpram_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/remap/add_39_39/add_39_39_sim_netlist.v" \
+"../../../../ps_in.srcs/sources_1/ip/base_axis_fifo/sim/base_axis_fifo.v" \
+"../../../../ps_in.srcs/sources_1/ip/base_axis_fifo_cdc32/sim/base_axis_fifo_cdc32.v" \
+"../../../../ps_in.srcs/sources_1/ip/base_axis_fifo_cdc64/sim/base_axis_fifo_cdc64.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/sv/mna_itf.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/AVR/avr_frs.v" \
+"../../../../ps_in.srcs/sources_1/rtl/AVR/avr_brs.v" \
+"../../../../ps_in.srcs/sources_1/rtl/AVR/avr_rs.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/image_make/cut_fixed.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/image_make/image_make_top.v" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/image_make/img_padding.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/image_make/image_make_ctrl.v" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/image_make/image_data_processing.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/image_make/pulse_cross.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nearest_upsample/nearest_ctrl.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nearest_upsample/nearest_upsample_wdma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nearest_upsample/nearest_upsample_rdma.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nearest_upsample/nearest_top.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nearest_upsample/addr_gen.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/iou_cu.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/avr_rb_double.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/nms_cdc_fifo.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/nms_rdma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/nms_bram.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/nms_top.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/nms/nms_wdma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/defer_unit.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/inst_ctrl.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/norm_ctrl.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/norm_cell.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/variance_cell.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/parallel_to_serial.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/cdc_process.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/serial_to_parallel.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/norm_wrapper.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/carmack.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/norm_dma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/norm/norm_core.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/customop_dwdc/collecting_fifo.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/sel.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/segpost_ctrl.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/bcmp.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/max_cmp.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/cmp.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/segpost_wdma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/n2w_segpost.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/addrgen.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/conf_buffer.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/bcacu.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/upsample.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/argmax.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/idx_buffer.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/obuffer.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/bilinear.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/one_pixel.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/segpost_top.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/segpost/coordgen.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/ftmp_rdma.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/remap_top.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/remap_ctrl.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/grid_rdma.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/ddr_ritcn_remap.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/n2w_remap.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/grid_trans.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/remap.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/remap_bram.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/w2n_remap.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/ftmp_wdma.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/AVR/avr_rb.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/remap/bilinear_remap.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/gen_b_done.sv" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/argmax2d_top.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/argmax2d_cmp.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/axis_fifo_cdc64.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/argmax2d_wdma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/axis_fifo_cdc32.v" \
+
+sv xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/argmax2d_ctrl.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/argmax2d_rdma.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/axis_fifo.v" \
+"../../../../ps_in.srcs/sources_1/rtl/hardop/argmax2d/cmp_argmax2d.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/nearest_top_tb.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/remap_top_tb.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/image_make_top_tb.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/nms_top_tb.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/argmax2d_top_tb.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/norm_wrapper_top_tb.v" \
+"../../../../ps_in.srcs/sources_1/rtl/reconfigure_tb/segpost_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

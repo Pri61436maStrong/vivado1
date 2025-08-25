@@ -1,0 +1,2 @@
+add_int64.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/norm/add_int64/sim/add_int64.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

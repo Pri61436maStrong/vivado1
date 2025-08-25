@@ -1,0 +1,2 @@
+fp16_sub.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/norm/fp16_sub/sim/fp16_sub.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

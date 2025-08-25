@@ -1,0 +1,490 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 12 16:01:24 2024
+# Process ID: 22300
+# Current directory: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1
+# Command line: vivado.exe -log w1280_d512.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source w1280_d512.tcl
+# Log file: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1/w1280_d512.vds
+# Journal file: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1\vivado.jou
+#-----------------------------------------------------------
+source w1280_d512.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/AI_Mate_IP_repo'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_channal_cache_clk/AI_Mate/AI_Mate/AI_Mate_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/PS_AI IP/PS_AI IP/processing_system7_v5_5'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 364.266 ; gain = 44.422
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.cache/ip 
+Command: synth_design -top w1280_d512 -part xc7z100ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21040 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 485.605 ; gain = 98.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'w1280_d512' [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/w1280_d512/synth/w1280_d512.vhd:73]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: w1280_d512.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 1280 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 1280 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 1280 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 1280 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 512 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 512 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 9 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 18 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     129.8954 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/w1280_d512/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/w1280_d512/synth/w1280_d512.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'w1280_d512' (9#1) [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/w1280_d512/synth/w1280_d512.vhd:73]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[71]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[70]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[69]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[68]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[67]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[66]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[65]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[64]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[63]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[62]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[61]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[60]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[59]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[58]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[57]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[56]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[55]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[54]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[53]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[52]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[51]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[50]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[49]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[48]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[47]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[46]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[45]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[44]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[43]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[42]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[41]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[40]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[39]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[38]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[37]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[36]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port ram_rstram_a
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized16 has unconnected port ram_rstreg_a
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[71]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[70]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[69]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[68]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[67]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[66]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[65]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[64]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[63]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[62]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[61]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[60]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[59]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[58]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[57]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized15 has unconnected port DINB[56]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 759.676 ; gain = 372.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:02:12 . Memory (MB): peak = 759.676 ; gain = 372.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:50 ; elapsed = 00:02:12 . Memory (MB): peak = 759.676 ; gain = 372.965
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/w1280_d512/w1280_d512_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/w1280_d512/w1280_d512_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.516 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1035.895 ; gain = 1.383
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:08 ; elapsed = 00:03:11 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:08 ; elapsed = 00:03:12 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:08 ; elapsed = 00:03:12 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:09 ; elapsed = 00:03:14 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:25 ; elapsed = 00:03:45 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:03:46 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:25 ; elapsed = 00:03:46 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB36E1 |    18|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+------------------------------------------+------+
+|      |Instance                                     |Module                                    |Cells |
++------+---------------------------------------------+------------------------------------------+------+
+|1     |top                                          |                                          |    18|
+|2     |  U0                                         |blk_mem_gen_v8_4_2                        |    18|
+|3     |    inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth                  |    18|
+|4     |      \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |    18|
+|5     |        \valid.cstr                          |blk_mem_gen_generic_cstr                  |    18|
+|6     |          \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     1|
+|7     |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     1|
+|8     |          \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9    |     1|
+|9     |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
+|10    |          \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10   |     1|
+|11    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     1|
+|12    |          \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11   |     1|
+|13    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized11 |     1|
+|14    |          \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12   |     1|
+|15    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized12 |     1|
+|16    |          \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13   |     1|
+|17    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized13 |     1|
+|18    |          \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14   |     1|
+|19    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized14 |     1|
+|20    |          \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15   |     1|
+|21    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized15 |     1|
+|22    |          \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16   |     1|
+|23    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized16 |     1|
+|24    |          \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     1|
+|25    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     1|
+|26    |          \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     1|
+|27    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     1|
+|28    |          \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
+|29    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
+|30    |          \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     1|
+|31    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     1|
+|32    |          \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     1|
+|33    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     1|
+|34    |          \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
+|35    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
+|36    |          \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     1|
+|37    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     1|
+|38    |          \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     1|
+|39    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     1|
+|40    |          \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
+|41    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
++------+---------------------------------------------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2680 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:02:54 . Memory (MB): peak = 1035.895 ; gain = 372.965
+Synthesis Optimization Complete : Time (s): cpu = 00:02:27 ; elapsed = 00:03:48 . Memory (MB): peak = 1035.895 ; gain = 649.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1035.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:03:54 . Memory (MB): peak = 1035.895 ; gain = 660.648
+INFO: [Coretcl 2-1174] Renamed 40 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1035.895 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/w1280_d512_synth_1/w1280_d512.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file w1280_d512_utilization_synth.rpt -pb w1280_d512_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 12 16:05:35 2024...

@@ -1,0 +1,1968 @@
+
+*** Running vivado
+    with args -log nms_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nms_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source nms_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Smvar/Desktop/Project/reconfigure_test/AI_Mate_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Smvar/Desktop/one_channal_cache_clk/AI_Mate/AI_Mate/AI_Mate_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Smvar/Desktop/PS_AI IP/PS_AI IP/processing_system7_v5_5'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+source C:/Users/Smvar/Desktop/Project/reconfigure_test/ip_patch/process_control/synthesis_pre.tcl
+current_dictory_path is C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1
+loc_index is 58.
+dst_str is C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs
+prj_path is C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Smvar/Desktop/Project/reconfigure_test/AI_Mate_IP_repo'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Smvar/Desktop/one_channal_cache_clk/AI_Mate/AI_Mate/AI_Mate_IP_repo'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Smvar/Desktop/PS_AI IP/PS_AI IP/processing_system7_v5_5'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Smvar/Desktop/Project/reconfigure_test/AI_Mate_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Smvar/Desktop/one_channal_cache_clk/AI_Mate/AI_Mate/AI_Mate_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Smvar/Desktop/PS_AI IP/PS_AI IP/processing_system7_v5_5'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 498.484 ; gain = 136.441
+step 1:pre_patch_check
+No disabled IP xdc file find in current project!
+Pre-patch check finished!
+
+step 2:pre_synthesis_patch
+No disabled IP xdc file find in current project!
+Pre-patch check finished!
+
+Start pre synthesis patch now!
+
+WARNING: [fmsh-2023] IP patch version information: 5.3.1(Thu Apr 03 11:39:50 +0800 2025)
+WARNING: [fmsh-2023] Release date: 2024/05/23(Thu Apr 03 11:39:50 +0800 2025)
+Find VIVADO path: C:/Xilinx/Vivado/2018.3
+Current device is xc7z100ffg900-2.
+set mig_version_value to NORMAL
+set microblaze_value to FALSE
+set gp_patch_value FALSE
+set cv_pcie_value NEW
+xfft IP mem_type_value is neither BRAM nor DRAM!
+Skip ZYNQ_PS_Master patch successfully!
+Current microblaze_patch is FALSE!
+pcie_version is NEW.
+change_speed_value:TRUE
+current_prj_path:C:/Users/Smvar/Desktop/Project/reconfigure_test
+env: C:/Users/Smvar/Desktop/Project/reconfigure_test
+Now check if spd files need replace:
+The operating system is WINDOWS!
+total_CPU_threads = 8
+WARNING: [fmsh-2024] FMSH-->Config Command:add_hook_tcl_to_prj   (Thu Apr 03 11:39:50 +0800 2025)
+IP patch stage 1 finished before synthesis!
+
+Time consume: 0 seconds.
+step 3:runEco0
+Command: synth_design -top nms_top -part xc7z100ffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11344 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/image_make/image_make_ctrl.v:337]
+WARNING: [Synth 8-2611] redeclaration of ansi port trans_data is not allowed [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/remap/remap.sv:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port trans_first is not allowed [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/remap/remap.sv:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port trans_last is not allowed [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/remap/remap.sv:82]
+WARNING: [Synth 8-2611] redeclaration of ansi port trans_valid is not allowed [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/remap/remap.sv:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port trans_ready is not allowed [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/remap/remap.sv:84]
+WARNING: [Synth 8-2507] parameter declaration becomes local in nearest_upsample_wdma with formal parameter declaration list [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nearest_upsample/nearest_upsample_wdma.v:34]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 597.809 ; gain = 89.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nms_top' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_top.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'mna_gp_ww_itf' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/sv/mna_itf.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'mna_gp_ww_itf' (0#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/sv/mna_itf.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'mna_hp_std_itf' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/sv/mna_itf.sv:234]
+INFO: [Synth 8-6155] done synthesizing module 'mna_hp_std_itf' (0#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/sv/mna_itf.sv:234]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter PARALSM bound to: 16 - type: integer 
+	Parameter IFW bound to: 32 - type: integer 
+	Parameter EDW bound to: 80 - type: integer 
+	Parameter DW bound to: 1280 - type: integer 
+	Parameter DEPTH bound to: 8192 - type: integer 
+	Parameter BRAM_EN bound to: true - type: string 
+INFO: [Synth 8-6157] synthesizing module 'iou_cu' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_cu.v:13]
+	Parameter DW bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sub_16_16' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/sub_16_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sub_16_16' (1#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/sub_16_16_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_16_16' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/mult_16_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_16_16' (2#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/mult_16_16_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add_32_32' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/add_32_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_32_32' (3#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/add_32_32_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sub_32_32' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/sub_32_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sub_32_32' (4#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/sub_32_32_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_24_16' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/mult_24_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_24_16' (5#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/mult_24_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'iou_cu' (6#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_cu.v:13]
+INFO: [Synth 8-6157] synthesizing module 'nms_ctrl' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:162]
+	Parameter AW bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pulse_cross' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/image_make/pulse_cross.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'pulse_cross' (7#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/image_make/pulse_cross.v:14]
+WARNING: [Synth 8-350] instance 'pulse_cross_u0' of module 'pulse_cross' requires 7 connections, but only 6 given [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:286]
+WARNING: [Synth 8-350] instance 'pulse_cross_u1' of module 'pulse_cross' requires 7 connections, but only 6 given [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:327]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:234]
+WARNING: [Synth 8-6014] Unused sequential element axi_awdata_reg was removed.  [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:242]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:254]
+WARNING: [Synth 8-3848] Net cu_start in module/entity nms_ctrl does not have driver. [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'nms_ctrl' (8#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_ctrl.sv:162]
+INFO: [Synth 8-6157] synthesizing module 'nms_rdma' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_rdma.v:14]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter NDW bound to: 64 - type: integer 
+	Parameter WDW bound to: 1280 - type: integer 
+	Parameter IFW bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'nms_cdc_fifo' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_cdc_fifo.sv:13]
+	Parameter DW bound to: 65 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'avr_rs' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/AVR/avr_rs.v:1]
+	Parameter DW bound to: 65 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'avr_frs' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/AVR/avr_frs.v:1]
+	Parameter DW bound to: 65 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'avr_frs' (9#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/AVR/avr_frs.v:1]
+INFO: [Synth 8-6157] synthesizing module 'avr_brs' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/AVR/avr_brs.v:23]
+	Parameter DW bound to: 65 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'avr_brs' (10#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/AVR/avr_brs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'avr_rs' (11#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/AVR/avr_rs.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_nms_base' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/cdc_fifo_nms_base_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_nms_base' (12#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/cdc_fifo_nms_base_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nms_cdc_fifo' (13#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_cdc_fifo.sv:13]
+WARNING: [Synth 8-689] width (64) of port connection 'rdata' does not match port width (65) of module 'nms_cdc_fifo' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_rdma.v:87]
+INFO: [Synth 8-6157] synthesizing module 'n2w_bwc_addr' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v:18]
+	Parameter NDW bound to: 64 - type: integer 
+	Parameter WDW bound to: 1280 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter CBW bound to: 6 - type: integer 
+	Parameter MULT bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'n2w_bwc_addr' (14#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'nms_rdma' (15#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_rdma.v:14]
+INFO: [Synth 8-6157] synthesizing module 'nms_wdma' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_wdma.v:14]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter NDW bound to: 64 - type: integer 
+	Parameter IFW bound to: 32 - type: integer 
+WARNING: [Synth 8-689] width (64) of port connection 'rdata' does not match port width (65) of module 'nms_cdc_fifo' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_wdma.v:75]
+WARNING: [Synth 8-689] width (64) of port connection 'rdata' does not match port width (65) of module 'nms_cdc_fifo' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_wdma.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'nms_wdma' (16#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_wdma.v:14]
+INFO: [Synth 8-6157] synthesizing module 'nms_bram' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_bram.v:14]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 1280 - type: integer 
+	Parameter IFW bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'w1280_d512' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/w1280_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'w1280_d512' (17#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/w1280_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nms_bram' (18#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_bram.v:14]
+INFO: [Synth 8-6157] synthesizing module 'iou_dma' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:13]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter PARALSM bound to: 16 - type: integer 
+	Parameter IFW bound to: 32 - type: integer 
+	Parameter EDW bound to: 80 - type: integer 
+	Parameter DW bound to: 1280 - type: integer 
+	Parameter DEPTH bound to: 8192 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'w16_d512' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/w16_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'w16_d512' (19#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/.Xil/Vivado-996-DESKTOP-22KCF78/realtime/w16_d512_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'avr_rb_double' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/avr_rb_double.v:16]
+	Parameter DW bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'avr_rb_double' (20#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/avr_rb_double.v:16]
+INFO: [Synth 8-6157] synthesizing module 'n2w_bwc_addr__parameterized0' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v:18]
+	Parameter NDW bound to: 16 - type: integer 
+	Parameter WDW bound to: 64 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter CBW bound to: 6 - type: integer 
+	Parameter MULT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'n2w_bwc_addr__parameterized0' (20#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v:18]
+WARNING: [Synth 8-3848] Net iou_awinfo in module/entity iou_dma does not have driver. [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'iou_dma' (21#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:13]
+WARNING: [Synth 8-689] width (32) of port connection 'iou_awinfo' does not match port width (4) of module 'iou_dma' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_top.sv:208]
+INFO: [Synth 8-6157] synthesizing module 'gen_b_done' [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/gen_b_done.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'gen_b_done' (22#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/gen_b_done.sv:13]
+WARNING: [Synth 8-3848] Net status in module/entity nms_top does not have driver. [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_top.sv:38]
+INFO: [Synth 8-6155] done synthesizing module 'nms_top' (23#1) [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/nms_top.sv:13]
+WARNING: [Synth 8-3331] design n2w_bwc_addr__parameterized0 has unconnected port n2w_naddr[5]
+WARNING: [Synth 8-3331] design n2w_bwc_addr__parameterized0 has unconnected port n2w_naddr[4]
+WARNING: [Synth 8-3331] design n2w_bwc_addr__parameterized0 has unconnected port n2w_naddr[3]
+WARNING: [Synth 8-3331] design n2w_bwc_addr__parameterized0 has unconnected port n2w_naddr[2]
+WARNING: [Synth 8-3331] design n2w_bwc_addr__parameterized0 has unconnected port n2w_naddr[1]
+WARNING: [Synth 8-3331] design n2w_bwc_addr__parameterized0 has unconnected port n2w_naddr[0]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port iou_awinfo[3]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port iou_awinfo[2]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port iou_awinfo[1]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port iou_awinfo[0]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port rinfo[31]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port rinfo[30]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port rinfo[29]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port rinfo[28]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[31]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[30]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[29]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[28]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[27]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[26]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[25]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[24]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[23]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[22]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[21]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[20]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[19]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[18]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[17]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[16]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[15]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[14]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[13]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[12]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[11]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[10]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[9]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[8]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[7]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[6]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[5]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[4]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[3]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[2]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[1]
+WARNING: [Synth 8-3331] design iou_dma has unconnected port anchor_hpsize[0]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[31]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[30]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[29]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[28]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[27]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[26]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[25]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[24]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[23]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[22]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[21]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[20]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[19]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[18]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[17]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[16]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[15]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[14]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[13]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[12]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[11]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[10]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port araddr[9]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port rready
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[31]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[30]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[29]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[28]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[27]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[26]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[25]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[24]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[23]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[22]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[21]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[20]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[19]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[18]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[17]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[16]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[15]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[14]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[13]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[12]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[11]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[10]
+WARNING: [Synth 8-3331] design nms_bram has unconnected port awaddr[9]
+WARNING: [Synth 8-3331] design n2w_bwc_addr has unconnected port n2w_naddr[5]
+WARNING: [Synth 8-3331] design n2w_bwc_addr has unconnected port n2w_naddr[4]
+WARNING: [Synth 8-3331] design n2w_bwc_addr has unconnected port n2w_naddr[3]
+WARNING: [Synth 8-3331] design n2w_bwc_addr has unconnected port n2w_naddr[2]
+WARNING: [Synth 8-3331] design n2w_bwc_addr has unconnected port n2w_naddr[1]
+WARNING: [Synth 8-3331] design n2w_bwc_addr has unconnected port n2w_naddr[0]
+WARNING: [Synth 8-3331] design nms_rdma has unconnected port rinfo[31]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 671.449 ; gain = 162.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 671.449 ; gain = 162.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 671.449 ; gain = 162.973
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/w1280_d512/w1280_d512/w1280_d512_in_context.xdc] for cell 'nms_bram_u0/w1280_d512_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/w1280_d512/w1280_d512/w1280_d512_in_context.xdc] for cell 'nms_bram_u0/w1280_d512_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_rdma_u0/nms_cdc_fifo_u0/nms_cdc_fifo_base_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_rdma_u0/nms_cdc_fifo_u0/nms_cdc_fifo_base_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_rdma_u0/nms_cdc_fifo_u1/nms_cdc_fifo_base_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_rdma_u0/nms_cdc_fifo_u1/nms_cdc_fifo_base_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_wdma_u0/nms_cdc_fifo_u0/nms_cdc_fifo_base_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_wdma_u0/nms_cdc_fifo_u0/nms_cdc_fifo_base_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_wdma_u0/nms_cdc_fifo_u1/nms_cdc_fifo_base_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/cdc_fifo_nms_base/cdc_fifo_nms_base/cdc_fifo_nms_base_in_context.xdc] for cell 'nms_wdma_u0/nms_cdc_fifo_u1/nms_cdc_fifo_base_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_16_16/mult_16_16/mult_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/w16_d512/w16_d512/w16_d512_in_context.xdc] for cell 'iou_dma_u0/w16_d512_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/w16_d512/w16_d512/w16_d512_in_context.xdc] for cell 'iou_dma_u0/w16_d512_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_24_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/mult_24_16/mult_24_16/mult_24_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/mult_24_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u1'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u1'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u2'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u2'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u3'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u3'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u4'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u4'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u5'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_16_16/sub_16_16/sub_16_16_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_16_16_u5'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_32_32_u6'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/sub_32_32/sub_32_32/sub_32_32_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/sub_32_32_u6'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[0].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[1].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[2].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[3].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[4].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[5].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[6].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[7].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[8].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[9].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[10].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[11].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[12].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[13].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[14].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/add_32_32_u0'
+Finished Parsing XDC File [c:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/ip/add_32_32/add_32_32/add_32_32_in_context.xdc] for cell 'iou_cu_gen[15].iou_cu_u0/add_32_32_u0'
+Parsing XDC File [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1164.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1164.078 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1164.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1164.078 ; gain = 655.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1164.078 ; gain = 655.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for nms_bram_u0/w1280_d512_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for nms_rdma_u0/nms_cdc_fifo_u0/nms_cdc_fifo_base_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for nms_rdma_u0/nms_cdc_fifo_u1/nms_cdc_fifo_base_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for nms_wdma_u0/nms_cdc_fifo_u0/nms_cdc_fifo_base_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for nms_wdma_u0/nms_cdc_fifo_u1/nms_cdc_fifo_base_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /mult_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /mult_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /mult_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for iou_dma_u0/w16_d512_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /mult_24_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_16_16_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_16_16_u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_16_16_u2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_16_16_u3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_16_16_u4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_16_16_u5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /sub_32_32_u6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[0].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[1].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[2].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[3].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[4].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[5].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[6].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[7].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[8].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[9].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[10].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[11].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[12].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[13].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[14].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \iou_cu_gen[15].iou_cu_u0 /add_32_32_u0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1164.078 ; gain = 655.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1164.078 ; gain = 655.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__4_iou_dma |           1|    102331|
+|2     |iou_dma__GB1       |           1|     11660|
+|3     |nms_top__GCB0      |           1|     26063|
+|4     |nms_top__GCB1      |           1|      8781|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register iou_data_reg [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:277]
+INFO: [Synth 8-3538] Detected potentially large (wide) register n2w_reg_reg [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v:52]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	             1280 Bit    Registers := 2     
+	               80 Bit    Registers := 1     
+	               65 Bit    Registers := 16    
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 107   
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 32    
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 322   
+	                9 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 384   
++---Muxes : 
+	   2 Input   1280 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 4     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 66    
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 101   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register iou_data_reg [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:277]
+INFO: [Synth 8-3538] Detected potentially large (wide) register n2w_reg_reg [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/n2w_bwc_addr.v:52]
+Hierarchical RTL Component report 
+Module nms_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module n2w_bwc_addr__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module avr_rb_double 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module iou_dma 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	             1280 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 9     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input   1280 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module pulse_cross__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pulse_cross 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module nms_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module avr_frs__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_frs__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module nms_cdc_fifo__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module avr_frs__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_frs__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module nms_cdc_fifo__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module n2w_bwc_addr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	             1280 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module nms_rdma 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module iou_cu 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module nms_bram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module iou_cu__xdcDup__15 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module iou_cu__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 20    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module gen_b_done 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_frs__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_frs 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module nms_cdc_fifo__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module avr_frs__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_frs__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module avr_brs__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module nms_cdc_fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module nms_wdma 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[33]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[34]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[35]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[36]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[37]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[38]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[39]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[40]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[41]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[42]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[43]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[44]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[45]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[46]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[47]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[48]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[49]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[50]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[51]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[52]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[53]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[54]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[55]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[56]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[57]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[58]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[59]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[60]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[61]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[62]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[63]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_brs/payload_tmp0_reg[64]' (FDCE) to 'i_0/nms_rdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_brs/payload_tmp0_reg[63]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/nms_rdma_u0/\nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64] )
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[0]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[1]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[2]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[0]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[1]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[2]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[0]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[1]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[2]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[0]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[1]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[2]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[3]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[4]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[5]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[6]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[7]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[8]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[9]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[10]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[11]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[12]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[13]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[14]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d1_reg[15]' (FDR) to 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d2_reg[0]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d2_reg[1]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d2_reg[2]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[3]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[4]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[5]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[6]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[7]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[8]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[9]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[10]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[11]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[12]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[13]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[14]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[2].iou_cu_u0/b0_cls_d1_reg[15]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[0]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[1]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[2]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[3]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[4]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[5]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[6]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[7]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[8]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[9]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[10]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[11]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[12]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[13]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[14]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d1_reg[15]' (FDR) to 'i_1/iou_cu_gen[4].iou_cu_u0/b0_cls_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d3_reg[0]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d3_reg[1]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d3_reg[2]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[3]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[4]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[5]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[6]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[7]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[8]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[9]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/iou_cu_gen[1].iou_cu_u0/b0_cls_d2_reg[10]' (FDR) to 'i_1/iou_cu_gen[3].iou_cu_u0/b0_cls_d2_reg[10]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\nms_wdma_u0/nms_cdc_fifo_u1/avr_rs_u0/u_avr_frs/s_data_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\nms_wdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\nms_wdma_u0/nms_cdc_fifo_u0/avr_rs_u0/u_avr_frs/s_data_reg[35] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__4_iou_dma |           1|      1331|
+|2     |iou_dma__GB1       |           1|      6739|
+|3     |nms_top__GCB0      |           1|     25004|
+|4     |nms_top__GCB1      |           1|      7665|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__4_iou_dma |           1|      1331|
+|2     |iou_dma__GB1       |           1|      6739|
+|3     |nms_top__GCB0      |           1|     25004|
+|4     |nms_top__GCB1      |           1|      7665|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[15]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[15] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[14]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[14] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[13]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[13] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[12]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[12] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[11]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[11] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[10]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[10] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[9]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[9] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[8]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[8] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[7]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[7] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[6]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[6] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[5]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[5] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[4]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[4] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[3]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[3] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[2]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[2] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[1]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[1] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+INFO: [Synth 8-4765] Removing register instance (\unit_mask_d1_reg[0]__0 ) from module (iou_dma__GB1) as it is equivalent to (\unit_mask_d1_reg[0] ) and driving same net [C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.srcs/sources_1/rtl/hardop/nms/iou_dma_bram.v:151]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|nms_top     | iou_dma_u0/group_info_d6_reg[8]            | 9      | 9     | YES          | NO                 | YES               | 9      | 0       | 
+|nms_top     | iou_cu_gen[15].iou_cu_u0/b1_cls_d5_reg[15] | 6      | 256   | YES          | NO                 | YES               | 256    | 0       | 
+|nms_top     | iou_cu_gen[0].iou_cu_u0/out_valid_reg      | 9      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|nms_top     | iou_cu_gen[0].iou_cu_u0/out_last_reg       | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|nms_top     | iou_cu_gen[15].iou_cu_u0/b0_cls_d5_reg[1]  | 5      | 16    | YES          | NO                 | YES               | 16     | 0       | 
++------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |sub_16_16         |        96|
+|2     |mult_16_16        |        48|
+|3     |add_32_32         |        16|
+|4     |sub_32_32         |        16|
+|5     |mult_24_16        |        16|
+|6     |w16_d512          |         1|
+|7     |w1280_d512        |         1|
+|8     |cdc_fifo_nms_base |         4|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |add_32_32            |     1|
+|2     |add_32_32__16        |     1|
+|3     |add_32_32__17        |     1|
+|4     |add_32_32__18        |     1|
+|5     |add_32_32__19        |     1|
+|6     |add_32_32__20        |     1|
+|7     |add_32_32__21        |     1|
+|8     |add_32_32__22        |     1|
+|9     |add_32_32__23        |     1|
+|10    |add_32_32__24        |     1|
+|11    |add_32_32__25        |     1|
+|12    |add_32_32__26        |     1|
+|13    |add_32_32__27        |     1|
+|14    |add_32_32__28        |     1|
+|15    |add_32_32__29        |     1|
+|16    |add_32_32__30        |     1|
+|17    |cdc_fifo_nms_base    |     1|
+|18    |cdc_fifo_nms_base__4 |     1|
+|19    |cdc_fifo_nms_base__5 |     1|
+|20    |cdc_fifo_nms_base__6 |     1|
+|21    |mult_16_16           |     1|
+|22    |mult_16_16__16       |     1|
+|23    |mult_16_16__17       |     1|
+|24    |mult_16_16__18       |     1|
+|25    |mult_16_16__19       |     1|
+|26    |mult_16_16__20       |     1|
+|27    |mult_16_16__21       |     1|
+|28    |mult_16_16__22       |     1|
+|29    |mult_16_16__23       |     1|
+|30    |mult_16_16__24       |     1|
+|31    |mult_16_16__25       |     1|
+|32    |mult_16_16__26       |     1|
+|33    |mult_16_16__27       |     1|
+|34    |mult_16_16__28       |     1|
+|35    |mult_16_16__29       |     1|
+|36    |mult_16_16__30       |     1|
+|37    |mult_16_16__31       |     1|
+|38    |mult_16_16__32       |     1|
+|39    |mult_16_16__33       |     1|
+|40    |mult_16_16__34       |     1|
+|41    |mult_16_16__35       |     1|
+|42    |mult_16_16__36       |     1|
+|43    |mult_16_16__37       |     1|
+|44    |mult_16_16__38       |     1|
+|45    |mult_16_16__39       |     1|
+|46    |mult_16_16__40       |     1|
+|47    |mult_16_16__41       |     1|
+|48    |mult_16_16__42       |     1|
+|49    |mult_16_16__43       |     1|
+|50    |mult_16_16__44       |     1|
+|51    |mult_16_16__45       |     1|
+|52    |mult_16_16__46       |     1|
+|53    |mult_16_16__47       |     1|
+|54    |mult_16_16__48       |     1|
+|55    |mult_16_16__49       |     1|
+|56    |mult_16_16__50       |     1|
+|57    |mult_16_16__51       |     1|
+|58    |mult_16_16__52       |     1|
+|59    |mult_16_16__53       |     1|
+|60    |mult_16_16__54       |     1|
+|61    |mult_16_16__55       |     1|
+|62    |mult_16_16__56       |     1|
+|63    |mult_16_16__57       |     1|
+|64    |mult_16_16__58       |     1|
+|65    |mult_16_16__59       |     1|
+|66    |mult_16_16__60       |     1|
+|67    |mult_16_16__61       |     1|
+|68    |mult_16_16__62       |     1|
+|69    |mult_24_16           |     1|
+|70    |mult_24_16__16       |     1|
+|71    |mult_24_16__17       |     1|
+|72    |mult_24_16__18       |     1|
+|73    |mult_24_16__19       |     1|
+|74    |mult_24_16__20       |     1|
+|75    |mult_24_16__21       |     1|
+|76    |mult_24_16__22       |     1|
+|77    |mult_24_16__23       |     1|
+|78    |mult_24_16__24       |     1|
+|79    |mult_24_16__25       |     1|
+|80    |mult_24_16__26       |     1|
+|81    |mult_24_16__27       |     1|
+|82    |mult_24_16__28       |     1|
+|83    |mult_24_16__29       |     1|
+|84    |mult_24_16__30       |     1|
+|85    |sub_16_16            |     1|
+|86    |sub_16_16__100       |     1|
+|87    |sub_16_16__101       |     1|
+|88    |sub_16_16__102       |     1|
+|89    |sub_16_16__103       |     1|
+|90    |sub_16_16__104       |     1|
+|91    |sub_16_16__105       |     1|
+|92    |sub_16_16__106       |     1|
+|93    |sub_16_16__107       |     1|
+|94    |sub_16_16__108       |     1|
+|95    |sub_16_16__109       |     1|
+|96    |sub_16_16__110       |     1|
+|97    |sub_16_16__16        |     1|
+|98    |sub_16_16__17        |     1|
+|99    |sub_16_16__18        |     1|
+|100   |sub_16_16__19        |     1|
+|101   |sub_16_16__20        |     1|
+|102   |sub_16_16__21        |     1|
+|103   |sub_16_16__22        |     1|
+|104   |sub_16_16__23        |     1|
+|105   |sub_16_16__24        |     1|
+|106   |sub_16_16__25        |     1|
+|107   |sub_16_16__26        |     1|
+|108   |sub_16_16__27        |     1|
+|109   |sub_16_16__28        |     1|
+|110   |sub_16_16__29        |     1|
+|111   |sub_16_16__30        |     1|
+|112   |sub_16_16__31        |     1|
+|113   |sub_16_16__32        |     1|
+|114   |sub_16_16__33        |     1|
+|115   |sub_16_16__34        |     1|
+|116   |sub_16_16__35        |     1|
+|117   |sub_16_16__36        |     1|
+|118   |sub_16_16__37        |     1|
+|119   |sub_16_16__38        |     1|
+|120   |sub_16_16__39        |     1|
+|121   |sub_16_16__40        |     1|
+|122   |sub_16_16__41        |     1|
+|123   |sub_16_16__42        |     1|
+|124   |sub_16_16__43        |     1|
+|125   |sub_16_16__44        |     1|
+|126   |sub_16_16__45        |     1|
+|127   |sub_16_16__46        |     1|
+|128   |sub_16_16__47        |     1|
+|129   |sub_16_16__48        |     1|
+|130   |sub_16_16__49        |     1|
+|131   |sub_16_16__50        |     1|
+|132   |sub_16_16__51        |     1|
+|133   |sub_16_16__52        |     1|
+|134   |sub_16_16__53        |     1|
+|135   |sub_16_16__54        |     1|
+|136   |sub_16_16__55        |     1|
+|137   |sub_16_16__56        |     1|
+|138   |sub_16_16__57        |     1|
+|139   |sub_16_16__58        |     1|
+|140   |sub_16_16__59        |     1|
+|141   |sub_16_16__60        |     1|
+|142   |sub_16_16__61        |     1|
+|143   |sub_16_16__62        |     1|
+|144   |sub_16_16__63        |     1|
+|145   |sub_16_16__64        |     1|
+|146   |sub_16_16__65        |     1|
+|147   |sub_16_16__66        |     1|
+|148   |sub_16_16__67        |     1|
+|149   |sub_16_16__68        |     1|
+|150   |sub_16_16__69        |     1|
+|151   |sub_16_16__70        |     1|
+|152   |sub_16_16__71        |     1|
+|153   |sub_16_16__72        |     1|
+|154   |sub_16_16__73        |     1|
+|155   |sub_16_16__74        |     1|
+|156   |sub_16_16__75        |     1|
+|157   |sub_16_16__76        |     1|
+|158   |sub_16_16__77        |     1|
+|159   |sub_16_16__78        |     1|
+|160   |sub_16_16__79        |     1|
+|161   |sub_16_16__80        |     1|
+|162   |sub_16_16__81        |     1|
+|163   |sub_16_16__82        |     1|
+|164   |sub_16_16__83        |     1|
+|165   |sub_16_16__84        |     1|
+|166   |sub_16_16__85        |     1|
+|167   |sub_16_16__86        |     1|
+|168   |sub_16_16__87        |     1|
+|169   |sub_16_16__88        |     1|
+|170   |sub_16_16__89        |     1|
+|171   |sub_16_16__90        |     1|
+|172   |sub_16_16__91        |     1|
+|173   |sub_16_16__92        |     1|
+|174   |sub_16_16__93        |     1|
+|175   |sub_16_16__94        |     1|
+|176   |sub_16_16__95        |     1|
+|177   |sub_16_16__96        |     1|
+|178   |sub_16_16__97        |     1|
+|179   |sub_16_16__98        |     1|
+|180   |sub_16_16__99        |     1|
+|181   |sub_32_32            |     1|
+|182   |sub_32_32__16        |     1|
+|183   |sub_32_32__17        |     1|
+|184   |sub_32_32__18        |     1|
+|185   |sub_32_32__19        |     1|
+|186   |sub_32_32__20        |     1|
+|187   |sub_32_32__21        |     1|
+|188   |sub_32_32__22        |     1|
+|189   |sub_32_32__23        |     1|
+|190   |sub_32_32__24        |     1|
+|191   |sub_32_32__25        |     1|
+|192   |sub_32_32__26        |     1|
+|193   |sub_32_32__27        |     1|
+|194   |sub_32_32__28        |     1|
+|195   |sub_32_32__29        |     1|
+|196   |sub_32_32__30        |     1|
+|197   |w1280_d512           |     1|
+|198   |w16_d512             |     1|
+|199   |BUFG                 |     3|
+|200   |CARRY4               |   379|
+|201   |LUT1                 |    46|
+|202   |LUT2                 |   364|
+|203   |LUT3                 |  2253|
+|204   |LUT4                 |  2230|
+|205   |LUT5                 |   158|
+|206   |LUT6                 |  1913|
+|207   |SRL16E               |   284|
+|208   |FDCE                 |   834|
+|209   |FDRE                 |  9907|
+|210   |IBUF                 |   132|
+|211   |OBUF                 |   168|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-----------------------------+------+
+|      |Instance                     |Module                       |Cells |
++------+-----------------------------+-----------------------------+------+
+|1     |top                          |                             | 24975|
+|2     |  \iou_cu_gen[0].iou_cu_u0   |iou_cu__xdcDup__1            |   825|
+|3     |  \iou_cu_gen[10].iou_cu_u0  |iou_cu__xdcDup__11           |   810|
+|4     |  \iou_cu_gen[11].iou_cu_u0  |iou_cu__xdcDup__12           |   810|
+|5     |  \iou_cu_gen[12].iou_cu_u0  |iou_cu__xdcDup__13           |   810|
+|6     |  \iou_cu_gen[13].iou_cu_u0  |iou_cu__xdcDup__14           |   810|
+|7     |  \iou_cu_gen[14].iou_cu_u0  |iou_cu__xdcDup__15           |   810|
+|8     |  \iou_cu_gen[15].iou_cu_u0  |iou_cu                       |   958|
+|9     |  \iou_cu_gen[1].iou_cu_u0   |iou_cu__xdcDup__2            |   890|
+|10    |  \iou_cu_gen[2].iou_cu_u0   |iou_cu__xdcDup__3            |   891|
+|11    |  \iou_cu_gen[3].iou_cu_u0   |iou_cu__xdcDup__4            |   890|
+|12    |  \iou_cu_gen[4].iou_cu_u0   |iou_cu__xdcDup__5            |   890|
+|13    |  \iou_cu_gen[5].iou_cu_u0   |iou_cu__xdcDup__6            |   810|
+|14    |  \iou_cu_gen[6].iou_cu_u0   |iou_cu__xdcDup__7            |   810|
+|15    |  \iou_cu_gen[7].iou_cu_u0   |iou_cu__xdcDup__8            |   810|
+|16    |  \iou_cu_gen[8].iou_cu_u0   |iou_cu__xdcDup__9            |   810|
+|17    |  \iou_cu_gen[9].iou_cu_u0   |iou_cu__xdcDup__10           |   810|
+|18    |  iou_dma_u0                 |iou_dma                      |  4206|
+|19    |    avr_rb_double_u0         |avr_rb_double                |    61|
+|20    |    n2w_bwc_addr_u0          |n2w_bwc_addr__parameterized0 |    81|
+|21    |  nms_bram_u0                |nms_bram                     |  3274|
+|22    |  nms_ctrl_u0                |nms_ctrl                     |   666|
+|23    |    pulse_cross_u0           |pulse_cross                  |    53|
+|24    |    pulse_cross_u1           |pulse_cross_21               |    10|
+|25    |  nms_rdma_u0                |nms_rdma                     |  2176|
+|26    |    n2w_bwc_addr_u0          |n2w_bwc_addr                 |  1299|
+|27    |    nms_cdc_fifo_u0          |nms_cdc_fifo__xdcDup__1      |   298|
+|28    |      avr_rs_u0              |avr_rs_15                    |   124|
+|29    |        u_avr_brs            |avr_brs_19                   |    73|
+|30    |        u_avr_frs            |avr_frs_20                   |    51|
+|31    |      avr_rs_u1              |avr_rs_16                    |   104|
+|32    |        u_avr_brs            |avr_brs_17                   |    70|
+|33    |        u_avr_frs            |avr_frs_18                   |    34|
+|34    |    nms_cdc_fifo_u1          |nms_cdc_fifo__xdcDup__2      |   492|
+|35    |      avr_rs_u0              |avr_rs_9                     |   220|
+|36    |        u_avr_brs            |avr_brs_13                   |   136|
+|37    |        u_avr_frs            |avr_frs_14                   |    84|
+|38    |      avr_rs_u1              |avr_rs_10                    |   203|
+|39    |        u_avr_brs            |avr_brs_11                   |   134|
+|40    |        u_avr_frs            |avr_frs_12                   |    69|
+|41    |  nms_wdma_u0                |nms_wdma                     |   800|
+|42    |    nms_cdc_fifo_u0          |nms_cdc_fifo__xdcDup__3      |   295|
+|43    |      avr_rs_u0              |avr_rs_3                     |   108|
+|44    |        u_avr_brs            |avr_brs_7                    |    74|
+|45    |        u_avr_frs            |avr_frs_8                    |    34|
+|46    |      avr_rs_u1              |avr_rs_4                     |   118|
+|47    |        u_avr_brs            |avr_brs_5                    |    82|
+|48    |        u_avr_frs            |avr_frs_6                    |    36|
+|49    |    nms_cdc_fifo_u1          |nms_cdc_fifo                 |   470|
+|50    |      avr_rs_u0              |avr_rs                       |   202|
+|51    |        u_avr_brs            |avr_brs_1                    |   137|
+|52    |        u_avr_frs            |avr_frs_2                    |    65|
+|53    |      avr_rs_u1              |avr_rs_0                     |   200|
+|54    |        u_avr_brs            |avr_brs                      |   135|
+|55    |        u_avr_frs            |avr_frs                      |    65|
+|56    |  u0_nms_b_done              |gen_b_done                   |    98|
++------+-----------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1289.613 ; gain = 781.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 1289.613 ; gain = 288.508
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1289.613 ; gain = 781.137
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 379 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1289.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1289.613 ; gain = 781.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1289.613 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Smvar/Desktop/Project/reconfigure_test/ps_in.runs/synth_1/nms_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nms_top_utilization_synth.rpt -pb nms_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 11:41:17 2025...

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../ps_in.srcs/sources_1/ip/norm/add_s74_s72/sim/add_s74_s72.vhd" \
+
+nosort

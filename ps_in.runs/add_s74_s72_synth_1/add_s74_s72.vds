@@ -1,0 +1,563 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 12 16:02:03 2024
+# Process ID: 21296
+# Current directory: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1
+# Command line: vivado.exe -log add_s74_s72.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source add_s74_s72.tcl
+# Log file: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1/add_s74_s72.vds
+# Journal file: E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1\vivado.jou
+#-----------------------------------------------------------
+source add_s74_s72.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/AI_Mate_IP_repo'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_channal_cache_clk/AI_Mate/AI_Mate/AI_Mate_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/PS_AI IP/PS_AI IP/processing_system7_v5_5'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 364.809 ; gain = 45.879
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.cache/ip 
+Command: synth_design -top add_s74_s72 -part xc7z100ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17196 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 485.398 ; gain = 98.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'add_s74_s72' [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/norm/add_s74_s72/synth/add_s74_s72.vhd:68]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 74 - type: integer 
+	Parameter C_B_WIDTH bound to: 72 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 74 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 7 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/norm/add_s74_s72/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/norm/add_s74_s72/synth/add_s74_s72.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'add_s74_s72' (7#1) [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/norm/add_s74_s72/synth/add_s74_s72.vhd:68]
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized4 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[10]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[9]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[8]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[7]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[6]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[5]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[4]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[3]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[2]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[1]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port b[0]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized13 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[9]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[8]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[7]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[6]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[5]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[4]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[3]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[2]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[1]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port b[0]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized15 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized11 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port CE
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized9 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized7 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized5 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized3 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized1 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized1 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized1 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy__parameterized1 has unconnected port bypass
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 555.000 ; gain = 167.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 555.000 ; gain = 167.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 555.000 ; gain = 167.719
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 275 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/norm/add_s74_s72/add_s74_s72_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.srcs/sources_1/ip/norm/add_s74_s72/add_s74_s72_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1007.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1007.301 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1008.805 ; gain = 1.504
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:01:09 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:01:09 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:01:09 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:01:10 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 8     
+	   2 Input     10 Bit         XORs := 5     
++---Registers : 
+	               11 Bit    Registers := 28    
+	               10 Bit    Registers := 21    
+	                1 Bit    Registers := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module c_reg_fd_v12_0_5_viv__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module c_reg_fd_v12_0_5_viv 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module c_addsub_v12_0_12_lut6_legacy 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
+Module c_reg_fd_v12_0_5_viv__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 1     
+Module c_reg_fd_v12_0_5_viv__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module c_addsub_v12_0_12_lut6_legacy__parameterized15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:12 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:39 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:01:41 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:01:41 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                                                                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|c_addsub_v12_0_12 | xst_addsub/i_baseblox.i_baseblox_addsub/pipelining.stages[4].slices[5].middlestages.abovediagonal.carryregister/i_no_async_controls.output_reg[1] | 4      | 22    | NO           | YES                | YES               | 22     | 0       | 
+|c_addsub_v12_0_12 | xst_addsub/i_baseblox.i_baseblox_addsub/pipelining.stages[5].slices[6].middlestages.abovediagonal.carryregister/i_no_async_controls.output_reg[1] | 5      | 22    | NO           | YES                | YES               | 22     | 0       | 
+|c_addsub_v12_0_12 | xst_addsub/i_baseblox.i_baseblox_addsub/pipelining.stages[7].slices[1].laststage.belowdiagonal.piperegister/i_no_async_controls.output_reg[10]    | 7      | 10    | NO           | YES                | YES               | 10     | 0       | 
+|c_addsub_v12_0_12 | xst_addsub/i_baseblox.i_baseblox_addsub/pipelining.stages[7].slices[2].laststage.belowdiagonal.piperegister/i_no_async_controls.output_reg[11]    | 6      | 22    | NO           | YES                | YES               | 22     | 0       | 
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    64|
+|2     |LUT2   |    79|
+|3     |MUXCY  |   136|
+|4     |SRL16E |    76|
+|5     |XORCY  |   138|
+|6     |FDRE   |   291|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------------------------------------------+----------------------------------------------------+------+
+|      |Instance                                                                              |Module                                              |Cells |
++------+--------------------------------------------------------------------------------------+----------------------------------------------------+------+
+|1     |top                                                                                   |                                                    |   784|
+|2     |  U0                                                                                  |c_addsub_v12_0_12                                   |   784|
+|3     |    xst_addsub                                                                        |c_addsub_v12_0_12_viv                               |   784|
+|4     |      \i_baseblox.i_baseblox_addsub                                                   |c_addsub_v12_0_12_legacy                            |   784|
+|5     |        \pipelining.stages[1].slices[1].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy                     |    41|
+|6     |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy                       |    41|
+|7     |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized1_53             |    10|
+|8     |            \i_q_c_out.i_simple.sub_q_cout.q_c_outreg                                 |c_reg_fd_v12_0_5_viv_54                             |     1|
+|9     |        \pipelining.stages[1].slices[2].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy__parameterized1     |    46|
+|10    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized1       |    46|
+|11    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_51             |    11|
+|12    |            \i_q_c_out.i_simple.sub_q_cout.q_c_outreg                                 |c_reg_fd_v12_0_5_viv_52                             |     2|
+|13    |        \pipelining.stages[1].slices[3].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy__parameterized3     |    41|
+|14    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized3       |    41|
+|15    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized1_49             |    10|
+|16    |            \i_q_c_out.i_simple.sub_q_cout.q_c_outreg                                 |c_reg_fd_v12_0_5_viv_50                             |     1|
+|17    |        \pipelining.stages[1].slices[4].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy__parameterized5     |    45|
+|18    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized5       |    45|
+|19    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_47             |    11|
+|20    |            \i_q_c_out.i_simple.sub_q_cout.q_c_outreg                                 |c_reg_fd_v12_0_5_viv_48                             |     1|
+|21    |        \pipelining.stages[1].slices[5].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy__parameterized7     |    41|
+|22    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized7       |    41|
+|23    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized1_45             |    10|
+|24    |            \i_q_c_out.i_simple.sub_q_cout.q_c_outreg                                 |c_reg_fd_v12_0_5_viv_46                             |     1|
+|25    |        \pipelining.stages[1].slices[6].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy__parameterized9     |    45|
+|26    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized9       |    45|
+|27    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_44             |    11|
+|28    |            \i_q_c_out.i_simple.sub_q_cout.q_c_outreg                                 |c_reg_fd_v12_0_5_viv                                |     1|
+|29    |        \pipelining.stages[1].slices[7].first.first_stage_adder                       |c_addsub_v12_0_12_fabric_legacy__parameterized11    |    43|
+|30    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized11      |    43|
+|31    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_43             |    11|
+|32    |        \pipelining.stages[2].slices[2].middlestages.diagonal.diagonal_adder          |c_addsub_v12_0_12_fabric_legacy__parameterized13    |    44|
+|33    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized13_41   |    44|
+|34    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_42             |    11|
+|35    |        \pipelining.stages[2].slices[2].middlestages.diagonal.i_sub.subcarryregister  |c_reg_fd_v12_0_5_viv__parameterized7                |     1|
+|36    |        \pipelining.stages[2].slices[3].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_0              |     2|
+|37    |        \pipelining.stages[2].slices[3].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized1                |    10|
+|38    |        \pipelining.stages[2].slices[4].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_1              |     1|
+|39    |        \pipelining.stages[2].slices[4].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4                |    11|
+|40    |        \pipelining.stages[3].slices[3].middlestages.diagonal.diagonal_adder          |c_addsub_v12_0_12_fabric_legacy__parameterized15    |    40|
+|41    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized15_39   |    40|
+|42    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized1_40             |    10|
+|43    |        \pipelining.stages[3].slices[3].middlestages.diagonal.i_sub.subcarryregister  |c_reg_fd_v12_0_5_viv__parameterized7_2              |     1|
+|44    |        \pipelining.stages[3].slices[4].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_3              |     2|
+|45    |        \pipelining.stages[3].slices[4].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_4              |    11|
+|46    |        \pipelining.stages[3].slices[5].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_5              |     1|
+|47    |        \pipelining.stages[3].slices[5].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized1_6              |    10|
+|48    |        \pipelining.stages[4].slices[4].middlestages.diagonal.diagonal_adder          |c_addsub_v12_0_12_fabric_legacy__parameterized13_7  |    44|
+|49    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized13_37   |    44|
+|50    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_38             |    11|
+|51    |        \pipelining.stages[4].slices[4].middlestages.diagonal.i_sub.subcarryregister  |c_reg_fd_v12_0_5_viv__parameterized7_8              |     1|
+|52    |        \pipelining.stages[4].slices[5].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_9              |     2|
+|53    |        \pipelining.stages[4].slices[5].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized1_10             |    10|
+|54    |        \pipelining.stages[4].slices[6].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_11             |     1|
+|55    |        \pipelining.stages[4].slices[6].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_12             |    11|
+|56    |        \pipelining.stages[5].slices[5].middlestages.diagonal.diagonal_adder          |c_addsub_v12_0_12_fabric_legacy__parameterized15_13 |    40|
+|57    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized15      |    40|
+|58    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized1_36             |    10|
+|59    |        \pipelining.stages[5].slices[5].middlestages.diagonal.i_sub.subcarryregister  |c_reg_fd_v12_0_5_viv__parameterized7_14             |     1|
+|60    |        \pipelining.stages[5].slices[6].middlestages.abovediagonal.carryregister      |c_reg_fd_v12_0_5_viv__parameterized7_15             |     2|
+|61    |        \pipelining.stages[5].slices[6].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_16             |    11|
+|62    |        \pipelining.stages[5].slices[7].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_17             |    11|
+|63    |        \pipelining.stages[6].slices[1].middlestages.belowdiagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized1_18             |    10|
+|64    |        \pipelining.stages[6].slices[2].middlestages.belowdiagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_19             |    11|
+|65    |        \pipelining.stages[6].slices[3].middlestages.belowdiagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized1_20             |    10|
+|66    |        \pipelining.stages[6].slices[4].middlestages.belowdiagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_21             |    11|
+|67    |        \pipelining.stages[6].slices[5].middlestages.belowdiagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized1_22             |    10|
+|68    |        \pipelining.stages[6].slices[6].middlestages.diagonal.diagonal_adder          |c_addsub_v12_0_12_fabric_legacy__parameterized13_23 |    44|
+|69    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized13_34   |    44|
+|70    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_35             |    11|
+|71    |        \pipelining.stages[6].slices[6].middlestages.diagonal.i_sub.subcarryregister  |c_reg_fd_v12_0_5_viv__parameterized7_24             |     1|
+|72    |        \pipelining.stages[6].slices[7].middlestages.abovediagonal.piperegister       |c_reg_fd_v12_0_5_viv__parameterized4_25             |    11|
+|73    |        \pipelining.stages[7].slices[1].laststage.belowdiagonal.piperegister          |c_reg_fd_v12_0_5_viv__parameterized1_26             |    10|
+|74    |        \pipelining.stages[7].slices[2].laststage.belowdiagonal.piperegister          |c_reg_fd_v12_0_5_viv__parameterized4_27             |    11|
+|75    |        \pipelining.stages[7].slices[3].laststage.belowdiagonal.piperegister          |c_reg_fd_v12_0_5_viv__parameterized1_28             |    10|
+|76    |        \pipelining.stages[7].slices[4].laststage.belowdiagonal.piperegister          |c_reg_fd_v12_0_5_viv__parameterized4_29             |    11|
+|77    |        \pipelining.stages[7].slices[5].laststage.belowdiagonal.piperegister          |c_reg_fd_v12_0_5_viv__parameterized1_30             |    10|
+|78    |        \pipelining.stages[7].slices[6].laststage.belowdiagonal.piperegister          |c_reg_fd_v12_0_5_viv__parameterized4_31             |    11|
+|79    |        \pipelining.stages[7].slices[7].laststage.diagonal.diagonal_adder             |c_addsub_v12_0_12_fabric_legacy__parameterized13_32 |    43|
+|80    |          \i_lut6.i_lut6_addsub                                                       |c_addsub_v12_0_12_lut6_legacy__parameterized13      |    43|
+|81    |            \i_q.i_simple.qreg                                                        |c_reg_fd_v12_0_5_viv__parameterized4_33             |    11|
++------+--------------------------------------------------------------------------------------+----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1008.805 ; gain = 621.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1008.805 ; gain = 167.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1008.805 ; gain = 621.523
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 274 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 39 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1014.941 ; gain = 639.129
+INFO: [Coretcl 2-1174] Renamed 80 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.941 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA_workspace/luowei/release_fpga/wyl_finnal/0731/one_input_wk_display_custop0_24073104/AI_Mate_IP/ps_in.runs/add_s74_s72_synth_1/add_s74_s72.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file add_s74_s72_utilization_synth.rpt -pb add_s74_s72_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 12 16:04:04 2024...

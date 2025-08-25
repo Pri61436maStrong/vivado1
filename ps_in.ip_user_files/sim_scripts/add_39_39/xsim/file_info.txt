@@ -1,0 +1,2 @@
+add_39_39.vhd,vhdl,xil_defaultlib,../../../../ps_in.srcs/sources_1/ip/remap/add_39_39/sim/add_39_39.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

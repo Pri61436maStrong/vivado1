@@ -1,0 +1,7 @@
+Running: xsim.dir/segpost_top_tb_behav/xsimk.exe -simmode gui -wdb segpost_top_tb_behav.wdb -simrunnum 0 -socket 64418
+Design successfully loaded
+Design Loading Memory Usage: 43080 KB (Peak: 43080 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 49712 KB (Peak: 49712 KB)
+Simulation CPU Usage: 171 ms

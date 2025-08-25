@@ -1,0 +1,585 @@
+
+
+
+
+
+
+
+
+
+ImageMake
+硬算子技术手册
+
+简要技术手册
+
+
+
+
+2023.03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+本资料是为了让用户根据用途选择合适的上海复旦微电子集团股份有限公司（以下简称复旦微电子）的产品而提供的参考资料，不保证本资料中不含任何瑕疵。
+本资料不转让属于复旦微电子或者第三者所有的知识产权以及其他权利的许可。
+在使用本资料所记载的信息最终做出有关信息和产品是否适用的判断前，请您务必将所有信息作为一个整体系统来进行评价。
+采购方对于选择与使用本文描述的复旦微电子的产品和服务全权负责，复旦微电子不承担采购方选择与使用本文描述的产品和服务的责任。除非以书面形式明确地认可，复旦微电子的产品不推荐、不授权、不担保用于包括军事、航空、航天、救生及生命维持系统在内的，由于失效或故障可能导致人身伤亡、严重的财产或环境损失的产品或系统中。
+未经复旦微电子的许可，不得翻印或者复制全部或部分本资料的内容。
+今后日常的产品更新会在适当的时候发布，恕不另行通知。 在购买本资料所记载的产品时，请预先向复旦微电子在当地的销售办事处确认最新信息，并请您通过各种方式关注复旦微电子公布的信息，包括复旦微电子的网站(http://www.fmsh.com/)。
+如果您需要了解有关本资料所记载的信息或产品的详情，请与上海复旦微电子集团股份有限公司在当地的销售办事处联系。
+
+商 标
+上海复旦微电子集团股份有限公司的公司名称、徽标以及“复旦”徽标均为上海复旦微电子集团股份有限公司及其分公司在中国的商标或注册商标。
+
+上海复旦微电子集团股份有限公司在中国发布，版权所有。
+
+
+章节列表
+1模块综述	4
+1.1功能简述	4
+1.2FEATURE LIST	4
+1.3结构框图	4
+1.3.1框图	4
+1.3.2框图说明	5
+2应用场景说明	5
+2.18BIT 模式拼接输出	5
+2.216BIT 模式拼接输出	5
+3模块接口及调用流程	5
+4模块设计实现	7
+4.1接口信号定义	7
+4.2模块时钟说明	8
+4.2.1模块时钟列表	8
+4.2.2模块时钟关系描述	8
+4.3模块复位信号说明	9
+4.3.1模块复位信号列表	9
+4.4寄存器定义	9
+4.5子模块设计说明	14
+4.5.1Image_make_ctrl 模块	14
+4.5.2Image_data_processing 模块	16
+4.5.3Img_padding 模块	17
+4.5.4n2w_bwc_addr 模块	18
+4.6资源占用	18
+5测试结果	19
+版本信息	20
+上海复旦微电子集团股份有限公司销售及服务网点	21
+
+1模块综述
+1.1功能简述
+
+　　　ImageMake 把数据从 PS DDR 中数据或者摄像头输入数据搬移到 PL DDR 中，同时在搬移过程中对输入数据进行预处理，padding 及补通道转换为硬件数据格式等功能。
+
+1.2Feature list
+
+?支持 1-4 通道数据输入，每个通道数据位宽为 16bit，数据类型为 int16
+?支持对各输入通道数据进行变换 y=(x–mean)*scale
+?支持对输入 feature map 进行 padding 操作，四周各支持最大 255
+?支持 Padding 非零值，各输入通道可以不同
+?输出支持 8bit 和 16bit 两种模式
+?输出数据通道补到 4 通道。经过位宽转换，拼接到 512bit 输出
+?支持输出转换成 ICORE 需要的格式
+
+1.3结构框图
+
+1.3.1框图
+
+图 1. ImageMake 模块结构框图
+
+
+1.3.2框图说明
+
+ImageMake 总共分为 4 个子模块实现。
+
+（1）寄存器控制单元用于配置解析寄存器；
+
+（2）数据处理单元完成输入每个通道的 Y =（X - mean）* scale 的操作；
+
+（3）padding 单元完成不需要重排通路的 padding 功能；
+
+（4）位宽转换模块分别完成 8bit 输出和 16bit 输出数据位宽拼接转换，拼接到 512bit 数据，写到 PL DDR 上；
+
+2应用场景说明
+
+以下是一些典型应用，其中涉及到的参数含义在后续寄存器说明章节会有介绍。
+
+2.18bit 模式拼接输出
+当为 8bit 模式时，每通道数据位宽为 8bit，将补通道到 4 通道即 32bit。16 个 32bit 拼接输出
+512bit 数据存放在 PL DDR 上。
+
+2.216bit 模式拼接输出
+当为 8bit 模式时，每通道数据位宽为 16bit，将补通道到 4 通道即 64bit。8 个 64bit 拼接输出
+512bit 数据存放在 PL DDR 上。
+
+3模块接口及调用流程
+
+　　　ImageMake 硬算子数据来源可以是 PS_DDR 中的数据或者摄像头输入数据，为 64bit 的图片数据，为 4 通道的输入，每个通道为 16bit。对于输入 RGB 图片数据而言，通过高位补 16 位 0，扩充到 64bit 的输入。ImageMake 读取图片数据之后经过硬件加速，将处理结果写到 PL_DDR。输出数据带宽为 512bit@100MHz。
+在编译模型时需对 ImageMake 的配置文件相应修改。
+（1）编译时操作
+
+
+
+如图，编译时需要在相应的阶段打开 customop 的 pass。本算子加入网络是在 adapt 阶段， 所以在 adapt 阶段的 pass_on 参数中配置 customop.ImageMakePass。custom_config 参数用来指定 custom_config.toml 的路径。
+（2）配置 customop 的参数
+如上图所示，customop 的参数在 custom_config.toml 中配置。ImageMake 目前的参数主要有以下几个,如下图：
+
+?no_imkpad ：0 表示第一层卷积的 pad 在 imagemake 中来做，为 1 表示第一层卷积的
+pad 不融入 imagemake；
+?sleep_time ：轮询寄存器间隔时间，单位为 us。目的是为了减小轮询寄存器时 CPU 的占用率；
+?input_port ：此参数仅用在多路输入的情况。此时位流工程中会例化多个 imagemake。对应的input_port 不同，表示各自的寄存器空间不同。如果不配置此参数，会默认 input0 的寄存器。input_port 的值支持 0~3。各自寄存器列表如下：
+
+?reg_base : 此参数用来配置其寄存器空间的基地址。默认是 input0 的基地址。当然，如果用户 FPGA 工程将其挂载到其他寄存器地址空间，可以通过配置此参数来改变软件配置寄存器的基地址。
+
+
+4模块设计实现
+
+4.1接口信号定义
+
+表 1. ImageMake 模块端口说明
+
+接口名称	输入输出	接口说明
+时钟复位信号
+S_AXI_ACLK	I	GP 寄存器通路时钟
+S_AXI_ARESETN	I	GP 寄存器通路复位，低有效
+M_AXI_ACLK	I	DDR 时钟
+M_AXI_ARESETN	I	DDR 复位，低有效
+寄存器通路信号
+cam_gp1_s01.araddr[31:0]	I	GP 寄存器通路读地址
+cam_gp1_s01.arvalid	I	GP 寄存器通路读请求有效
+cam_gp1_s01.arready	O	GP 寄存器通路可以接收读请求
+cam_gp1_s01.rdata[31:0]	O	GP 寄存器通路读数据
+cam_gp1_s01.rvalid	O	GP 寄存器通路读数据有效
+cam_gp1_s01.rready	I	GP 寄存器通路可以接收读数据
+cam_gp1_s01.awwaddr[31:0]	I	GP 寄存器通路写地址
+cam_gp1_s01.awwdata[31:0]	I	GP 寄存器通路写数据
+cam_gp1_s01.awwvalid	I	GP 寄存器通路写请求有效
+cam_gp1_s01.awwready	O	GP 寄存器通路可以接收写请求
+数据输入通路信号
+img_start	I	启动信号，启动 ImageMake，脉冲信号
+img_data[63:0]	I	输入图片数据
+img_valid	I	输入图片数据有效
+img_ready	O	ImageMake 可以接收输入图片数据
+continuous_en	I	PLin 的 continuous 模式控制信号，一般接 0
+写 PL DDR 信号
+img_ddr_ww_itf.awwaddr[31:0]	O	DDR 通路写地址
+img_ddr_ww_itf.awwdata[511:0]	O	DDR 通路写数据
+
+
+接口名称	输入输出	接口说明
+img_ddr_ww_itf.awwvalid	O	DDR 通路写数据有效
+img_ddr_ww_itf.awwready	I	DDR 通路可以接收写数据
+
+输入接口时序:
+　　　如图 3 所示，输入接口通过类似于 axi 协议与内部握手。Master 端发送数据及 valid 信号，slave 端发送 ready 信号，当 valid 和 ready 同时有效时，完成一次握手，即一次数据传输。
+
+图 3.输入接口时序图
+
+4.2模块时钟说明
+
+4.2.1模块时钟列表
+
+表 2. ImageMake 时钟使用情况
+
+时钟名称	工作频率	占空比	说明
+S_AXI_ACLK	100MHz	50%	GP 寄存器通路时钟
+M_AXI_ACLK	200MHZ	50%	DDR 时钟
+
+4.2.2模块时钟关系描述
+
+　　　在有跨时钟域的数据搬移通路中均加入 FIFO 模块用于数据缓存，单比特信号经过两拍寄存器来消除亚稳态现象。
+
+
+4.3模块复位信号说明
+
+4.3.1模块复位信号列表
+
+表 3. ImageMake 复位信号情况
+
+
+复位信号名称	输入复位/
+本地复位	
+有效电平	
+说明
+S_AXI_ARESETN	本地复位	低有效	GP 寄存器通路复位
+M_AXI_ARESETN	本地复位	低有效	DDR 复位
+
+4.4寄存器定义
+
+　　　通过 GP1 读写寄存器，配置 ImageMake 的参数、控制位，获取 ImageMake 的状态位。寄存器地址空间分配如下表所示（缺省 gp1_base 为 0x8000_0000，实际 gp1_base 以具体工程为准，以下展示偏移地址）：
+偏移地址	0x414
+位	[31:16]	[15:0]
+位名	mean0	scale0
+位权	RW	RW
+复位值	0	0
+功能	第 1 通道 mean	第 1 通道 scale
+
+偏移地址	0x418
+位	[31:16]	[15:0]
+位名	mean1	scale1
+位权	RW	RW
+复位值	0	0
+功能	第 2 通道 mean	第 2 通道 scale
+
+偏移地址	0x41C
+位	[31:16]	[15:0]
+位名	mean2	scale2
+
+
+位权	RW	RW
+复位值	0	0
+功能	第 3 通道 mean	第 3 通道 scale
+
+
+偏移地址	0x420
+位	[31:16]	[15:0]
+位名	mean3	scale3
+位权	RW	RW
+复位值	0	0
+功能	第 4 通道 mean	第 4 通道 scale
+
+
+偏移地址	0x514
+位	[31:0]
+位名	img_wddr_base_a
+位权	RW
+复位值	0
+功能	写 PL DDR 基地址 a
+
+
+偏移地址	0x518
+位	[31:12]	[11:0]
+位名	-	img_width
+位权	R	RW
+复位值	0	0
+功能	RFU	图像宽度
+
+
+偏移地址	0x51C
+位	[31:12]	[11:0]
+位名	-	img_height
+位权	R	RW
+复位值	0	0
+功能	RFU	图像高度
+
+
+偏移地址	0x524
+位	[31:24]	[23:16]	[15:8]	[7:0]
+位名	pad_right	pad_left	pad_bottom	pad_top
+位权	RW	RW	RW	RW
+复位值	0	0	0	0
+功能	右边 Padding 数	左边 Padding 数	底部 Padding 数	顶部 Padding 数
+
+
+偏移地址	0x528
+位	[31:12]	[11:0]
+位名	-	pad0
+位权	R	RW
+复位值	0	0
+功能	RFU	第 1 通道 padding 的值
+
+
+偏移地址	0x52C
+位	[31:12]	[11:0]
+位名	-	pad1
+位权	R	RW
+复位值	0	0
+功能	RFU	第 2 通道 padding 的值
+
+
+偏移地址	0x530
+位	[31:12]	[11:0]
+位名	-	pad2
+位权	R	RW
+复位值	0	0
+功能	RFU	第 3 通道 padding 的值
+
+
+偏移地址	0x534
+位	[31:12]	[11:0]
+位名	-	pad3
+位权	R	RW
+
+
+复位值	0	0
+功能	RFU	第 4 通道 padding 的值
+
+
+偏移地址	0x628
+位	[31:1]	0
+位名	-	img_done
+位权	R	R
+复位值	0	0
+
+功能	
+RFU	ImageMake 做完标志，启动 ImageMake 硬
+件清 0，写 1 清 0
+
+
+偏移地址	0x62C
+位	[31:0]
+位名	time_cnt
+位权	R
+复位值	0
+功能	ImageMake 时钟 cycle 数
+
+
+偏移地址	0x630
+位	[31:2]	[1:0]
+位名	-	img_wstatus
+位权	R	R
+复位值	0	0
+功能	RFU	ImageMake 写状态信号
+
+
+偏移地址	0x634
+位	[31:0]
+位名	icore_pre_ctrl_ver
+位权	R
+复位值	0
+功能	ImageMake 版本号
+
+
+偏移地址	0x640
+位	[31:7]	[6:0]
+位名	-	channel_each
+位权	R	RW
+复位值	0	0
+功能	RFU	图像通道数，最大支持 4 通道数据并行处理
+
+
+偏移地址	0x644
+位	[31:7]	[6:0]
+位名	-	channel_times
+位权	R	RW
+复位值	0	0
+功能	RFU	图片数据分批处理数，本版本硬件固定为 1
+
+
+偏移地址	0x654
+位	[31:3]	[2]	[1:0]
+位名	-	process_bypass	data_type
+位权	R	RW	RW
+复位值	0	0	0
+
+功能	
+RFU	数据处理单元 bypass 控制
+0：经过处理单元
+1：bypass 处理单元	
+数据类型 0:8bit 1:16bit
+
+
+偏移地址	0x658
+位	[24:0]
+位名	img_wddr_base_b
+位权	RW
+复位值	0
+功能	写 PL DDR 基地址 b
+
+
+偏移地址	0x65C
+位	[0]
+
+
+位名	soft_rst
+位权	RW
+复位值	0
+功能	软复位寄存器，写 1 复位，写 0 清除复位
+
+
+偏移地址	0x660
+位	[31:0]
+位名	data_in_num
+位权	R
+复位值	0
+功能	记录每次传数输入本模块数据的个数
+
+
+4.5子模块设计说明
+
+4.5.1Image_make_ctrl 模块
+
+Image_make_ctrl 模块用于寄存器解析，具体寄存器详见 4.4 节。
+表 4. image_make_ctrl 模块端口说明
+
+接口名称	输入输出	接口说明
+时钟复位信号
+S_AXI_ACLK	I	GP 寄存器通路时钟
+S_AXI_ARESETN	I	GP 寄存器通路复位，低有效
+img_clk	I	DDR 时钟
+img_rst	I	DDR 复位,高有效
+寄存器通路信号
+cam_gp1_s01.araddr[31:0]	I	GP 寄存器通路读地址
+cam_gp1_s01.arvalid	I	GP 寄存器通路读地址有效
+cam_gp1_s01.arready	O	GP 寄存器通路可以接收读地址
+cam_gp1_s01.rdata[31:0]	O	GP 寄存器通路读数据
+cam_gp1_s01.rvalid	O	GP 寄存器通路读数据有效
+cam_gp1_s01.rready	I	GP 寄存器通路可以接收读数据
+cam_gp1_s01.awwaddr[31:0]	I	GP 寄存器通路写地址
+
+
+接口名称	输入输出	接口说明
+cam_gp1_s01.awwdata[31:0]	I	GP 寄存器通路写数据
+cam_gp1_s01.awwvalid	I	GP 寄存器通路写请求有效
+cam_gp1_s01.awwready	O	GP 寄存器通路可以接收写请求
+控制和状态信号
+img_wddr_start	O	ImageMake 写数据启动，脉冲信号
+img_wddr_base_a[24:0]	O	ImageMake 写数据基地址
+img_width[11:0]	O	图片宽度
+img_height[11:0]	O	图片高度
+img_pad[31:0]	O	Padding 情况{right,left,bottom,top} ，各方向最多
+8bit
+channel_each[6:0]	O	传输加速单元移位输出到数据处理单元的通道
+数，最大支持 4 通道数据并行处理
+channel_times[6:0]	O	图片数据分批处理数
+mean[63:0]	O	各通道的均值，每个通道的均值占 16bit
+scale[63:0]	O	各通道的比例系数，每个通道占 16bit
+pad_data[63:0]	O	各通道需要 pad 的数值
+imgmk_w[6:0]	O	重排宽度
+imgmk_h[6:0]	O	重排高度
+imgmk_c[6:0]	O	重排通道数
+img_wddr_done	I	ImageMake 写数据完成标志，脉冲信号
+dvp_vsync_start	I	开始控制信号
+img_en	O	数据通路使能信号
+img_rstatus[31:0]	I	ImageMake 读状态
+img_wstatus[31:0]	I	ImageMake 写状态
+
+
+4.5.2Image_data_processing 模块
+
+图 4.image_data_processing 结构框图
+
+　　　数据处理单元对输入的每个像素点的每个通道完成 Y=（X- mean）*scale 的操作。Mean 为 16bit数据，scale 为 16bit 数据， 输出 16bit 的数据。不同的通道对应的 mean 和 scale 可以是不同的。四通道数据并行计算，输出数据放到缓存中，剩下的通道补零。
+　　　数据处理单元采用流水线设计。利用三级流水线分别完成加法，乘法。计算结果送入 padding 模块完成 padding 功能。
+表 5 image_data_processing 模块端口说明
+
+接口名称	输入输出	接口说明
+时钟复位信号
+M_AXI_ACLK	I	DDR 时钟信号
+M_AXI_ARESETN	I	DDR 复位信号，低有效
+读 PL DDR 数据通路信号
+sub_data[63:0]	I	各通道需要减法的均值（最大 4 通道）
+mult_data[63:0]	I	各通道需要相乘的比例（最大 4 通道）
+channel_each[6:0]	I	传输加速单元移位输出到数据处理单元的通道数，
+最大支持 4 通道数据并行处理
+channel_time[6:0]	I	图片数据分批处理数
+img_start	I	ImageMake 读数据启动，脉冲信号
+
+
+接口名称	输入输出	接口说明
+img_in[63:0]	I	数据处理单元输入数据
+img_in_valid	I	数据处理单元输入数据有效
+img_in_ready	O	可以接收数据处理单元输入数据
+img_out[63:0]	O	数据处理单元输出数据
+img_out_valid	O	数据处理单元输出数据有效
+img_out_ready	I	可以接收数据处理单元输出数据
+
+
+4.5.3Img_padding 模块
+
+　　　padding 单元完成不重排数据通路的 padding 功能。padding 数量和每个通道 padding 值通过寄存器配置。支持不同通道 pad 不同的值。
+表 7 img_padding 模块端口说明
+
+接口名称	输入输出	接口说明
+时钟复位信号
+clk	I	DDR 时钟信号
+rst	I	DDR 复位信号，高有效
+数据通路信号
+pad_idata[63:0]	I	Padding 单元输入数据
+pad_ivalid	I	Padding 单元输入数据有效
+pad_iready	O	Padding 单元可以接收输入数据
+pad_odata[63:0]	O	Padding 单元输出数据
+pad_oaddr[31:0]	O	Padding 单元输出地址
+pad_olast	O	Padding 单元输出最后一个数据
+pad_ovalid	O	Padding 单元输出数据及地址有效
+pad_oready	I	Padding 单元可以接收输出数据及地址
+控制和状态信号
+img_wddr_start	I	ImageMake 写数据启动，脉冲信号
+img_wddr_base_a[31:0]	I	ImageMake 写数据基地址
+img_width[11:0]	I	图片宽度
+img_height[11:0]	I	图片高度
+
+
+接口名称	输入输出	接口说明
+img_pad[31:0]	I	Padding 情况{right,left,bottom,top}，各方向最多8bit
+img_wddr_done	O	ImageMake 写数据完成标志，脉冲信号
+pad_data[63:0]	I	各通道需要 pad 的数值
+continuous_en	I	PLin 的 continuous 模式控制信号
+
+
+4.5.4n2w_bwc_addr 模块
+
+　　　该模块把数据拼接成 512bit，转换成对应 ICORE 硬件格式，写到 PL DDR。对于 8bit 模式而言， 每个点 4 通道占 32bit，该模块可以将 16 个点拼接为一个 512bit 输出。对于 16bit 模式而言，每个点 4 通道占 64bit，该模块可以将 8 个点拼接为一个 512bit 输出。
+表 8 n2w_bwc_addr 模块端口说明
+
+接口名称	输入输出	接口说明
+n2w_ndata[31:0]	I	窄位宽数据
+n2w_naddr[31:0]	I	窄位宽地址
+n2w_nvalid	I	窄位宽地址数据有效
+n2w_nlast	I	最后一个窄位宽地址数据
+n2w_nready	O	可以接收窄位宽数据
+n2w_wdata[511:0]	O	宽位宽数据
+n2w_waddr[31:0]	O	宽位宽地址
+n2w_wlast	O	最后一个宽位宽地址数据
+n2w_wvalid	O	宽位宽地址数据有效
+n2w_wready	I	可以接收宽位宽数据
+n2w_clk_rst	I	复位信号，高有效
+n2w_clk	I	时钟信号
+
+
+4.6资源占用
+
+表 9 ImageMake 资源占用情况
+
+
+
+
+
+
+5测试结果
+
+在 BUYI 中 AXI 模式中测试通过了一些常用网络 ImageMake 用时。统计如下表：
+
+网络(输入尺寸)	ImageMake 用时(ms)
+yolov3_16bit(416*416)	0.92626333
+yolov3_8bit(416*416)	0.91895
+yolov5s_16bit（640*640）	2.176155
+yolov5s_8bit（640*640）	2.15671
+yolov7_16bit（640*640）	2.16357
+yolov7_8bit（640*640）	2.148225
+yolov7d6_16bit(1280*1280)	8.6263533
+yolov7d6_8bit(1280*1280)	8.583115
